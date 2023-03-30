@@ -18,3 +18,9 @@ def test_get_emoji(page, test_web_address): # Note new parameters
     expect(strong_tag).to_have_text(":)")
 
 # === End Example Code ===
+"""
+When we visit /goodbye
+We see, "Bye!"
+"""
+def test_get_goodbye(page, test_web_address):
+    page.goto(f"http://{test_web_address}/goodbye")
